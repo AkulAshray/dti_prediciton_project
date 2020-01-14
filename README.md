@@ -148,7 +148,7 @@ After having carried out the clusters, I repeated my model training and predicti
 
 <img src="https://github.com/AkulAshray/dti_prediciton_project/blob/master/Images/Screenshot%202020-01-14%20at%2011.41.05.png?raw=true" alt="RandomForest" width="900"/>
 
-**The figure above shows results for RandomForest model. We notice that there is no major difference in either of the metrics. Their MSE score decreases by 0.1 but their correleation coefficent remains unchanged**.
+**The figure above shows results for RandomForest model.** We notice that there is no major difference in either of the metrics. Their MSE score decreases by 0.1 but their correleation coefficent remains unchanged.
 
 <img src="https://github.com/AkulAshray/dti_prediciton_project/blob/master/Images/Screenshot%202020-01-14%20at%2011.41.28.png?raw=true" alt="RandomForest" width="900"/>
 
