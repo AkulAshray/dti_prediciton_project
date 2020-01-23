@@ -126,15 +126,14 @@ After experiemting with all of them, I finally chose to run my models on PSSM an
 
 ## Model Selection
 
-I have ran 3 different models on both embeds of protein sequences. The task was to predict the **pChemBL value**, which indicated the binging affinity betweeen drug and their target. We use the ECFP4 molecular fingerprint and the embeded proteins to train the model to predict . pChemBL value.
+I have ran 3 different models to create embeds for protein sequences and compared them to teh PSSM based encoding. The task was to predict the **pChemBL value**, which indicated the binging affinity betweeen drug and their target. We use the ECFP4 molecular fingerprint and the embeded proteins to train the model to predict . pChemBL value.
 
 I have found that that __Randomforest model__ after performing gridsearvhCV gave the best performance on both types of embeds. The results were almost similar, they have the same pearson's correlation coefficient of 0.86. The PSSM embedded protein sequences gave a mean squared error of 0.42.
 
-<img src="https://github.com/AkulAshray/dti_prediciton_project/blob/master/Images/Screenshot%202020-01-14%20at%2012.15.04.png?raw=true" alt="RandomForest" width="900"/>
+<img src="https://raw.githubusercontent.com/AkulAshray/dti_prediciton_project/master/results.png" alt="RandomForest" width="900"/>
 
-The next best model I obtained was the use of simple MLP regressor. It had a good correlation coefficient but had a lot of variance and spread resulting in poorer MSE score. The results are shown below.
+The next best model I obtained was the use of simple MLP regressor. It had a good correlation coefficient but had a lot of variance and spread resulting in poorer MSE score. I have therefore just chosen to work with random forest model
 
-<img src="https://github.com/AkulAshray/dti_prediciton_project/blob/master/Images/Screenshot%202020-01-14%20at%2011.31.32.png?raw=true" alt="RandomForest" width="900"/>
 
 ### Improving the model
 
