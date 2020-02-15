@@ -153,3 +153,6 @@ After having carried out the clusters, I repeated my model training and predicti
 
 **The figure above shows results for  MLP regressor**
 Compared to the randomforest model, MLP regressors performance for both embedding methods have improved by a lot. There is a much better increase in metrics associated with SGT embeds, this might be because SGT embeds has been implemented initially to cluster protein sequences and so they seem to do a better job in creating clusters, which may explain why they perform better. 
+
+Summary:
+In short it is possible to use machine learning approaches to predict the interaction of drugs with their target. In the project we notice that the prediction is conservative at best, where the model predicts low pChemb value for when the actual is higher and for when predicts a higher pChemb value for those where the actual is lower. It can still be useful in weeding particularly low interacting drugs and help save money in the long run.
